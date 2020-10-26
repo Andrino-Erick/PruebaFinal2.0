@@ -1,0 +1,72 @@
+//Declariación de variables de colores
+$color-primario: #f2ddfc;
+$color-oscuro: #06231F;
+$color-claro: #FFFFFF;
+$color-fondo: #2C0659;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: $color-claro;
+    text-decoration: none;
+
+}
+
+body{
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Piazzolla', Arial, Helvetica, sans-serif;
+    background: $color-fondo;
+    color: $color-claro;
+}
+
+h1{
+    font-family: 'Cabin';
+    font-weight: normal;
+
+}
+
+h2,
+h3,
+h4,
+p{
+    font-family: 'Open';
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Open';
+    text-transform: uppercase;
+
+}
+
+//creación de nuestra funcion
+@function get-opacity($color, $nivel){
+    @return rgba($color, $nivel);
+}
+
+
+.footer{
+    margin-top: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+@media screen and(max-width: 1149px){
+    .title{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+   
+}

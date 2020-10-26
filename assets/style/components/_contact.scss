@@ -1,0 +1,70 @@
+.container-contact{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    .contact h3{
+        margin-bottom: 15px;
+    }
+
+    .contact form label{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .contact input[type="email"]{
+        width: 350px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    .contact textarea{
+        width: 350px;
+        height: 150px;
+        
+    }
+
+    .contact input[type="button"]{
+        width: 100px;
+        height: 40px;
+        margin-top: 15px;
+        background-color: $color-primario;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and(max-width: 414px){
+    .container-contact{
+        width: 100%;
+    }
+}
+
+@media screen and(max-width: 360px){
+
+    .container-contact{
+        width: 100%;
+    }
+    
+    .contact h3,
+    .contact form label{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .container-contact .contact input[type="email"]{
+        width: 329px;
+        margin-left: 15px;
+    }
+
+    .container-contact .contact textarea{
+        width: 320px;
+        margin-left: 15px;
+    }
+
+    .container-contact .contact input[type="button"]{
+        margin-left: 15px;
+    }
+}
